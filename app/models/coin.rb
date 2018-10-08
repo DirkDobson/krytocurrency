@@ -6,6 +6,6 @@ class Coin < ApplicationRecord
   has_many :users, through: :watched_coins
 
   def self.create_by_cmc_id(res)
-    
+    match = res['data'].with_indifferent_access
   end
 end
