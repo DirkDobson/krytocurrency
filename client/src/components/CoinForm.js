@@ -34,4 +34,4 @@ class CoinForm extends React.Component {
   }
 }
 
-export default CoinForm
+export default connect()(CoinForm)
